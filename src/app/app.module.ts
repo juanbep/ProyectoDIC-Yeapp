@@ -9,7 +9,6 @@ import { ValuePayComponent } from './componets/value-pay/value-pay.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { Facturav1Component } from './componets/factura/facturav1/facturav1.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
@@ -21,7 +20,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
   declarations: [
     AppComponent,
     SideBarComponent,
-
+    Facturav1Component,
     ValuePayComponent
   ],
   imports: [
