@@ -1,0 +1,39 @@
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Estado de cuenta
+      </mat-panel-title>
+      <mat-panel-description>
+        Resumen {{panelOpenState ? 'open' : 'closed'}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+      <div>
+        <table class="rounded-10">
+          <tr class="bg-blue">
+            <td>Fecha Estado de Cuenta</td>
+          </tr>
+          <tr>
+            <td>21/10/2023</td>
+          </tr>
+          <tr>
+            <td>Valor total del apartamento</td>
+          </tr>
+          <tr>
+            <td>$ 130.000.000</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>Fecha Estado de Cuenta</td>
+          </tr>
+          <tr>
+            <td>total Abonado</td>
+            <td>Abono mes anterior</td>
+            <td>Saldo total</td>
+          </tr>
+        </table>
+      </div>
+
+  </mat-expansion-panel>
+</mat-accordion>
