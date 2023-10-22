@@ -1,3 +1,5 @@
+<h1>Historial de Aportes</h1>
+
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
     <!--- Note that these columns can be defined in any order.
@@ -30,7 +32,9 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
-
+<br><br>
+<h1>Progreso</h1>
+<br>
   <div class="row">
     <div class="col-md-6">
       <table class="table table-bordered table-striped table-hover">
@@ -51,6 +55,7 @@
                 [innerStrokeColor]="'#6f6f6f'"
                 [animation]="true"
                 [animationDuration]="300"
+                [subtitle]="'Construido'"
               ></circle-progress></td>
               <td class="text-center"><circle-progress
                 [percent]="70"
@@ -61,6 +66,7 @@
                 [innerStrokeColor]="'#6f6f6f'"
                 [animation]="true"
                 [animationDuration]="300"
+                [subtitle]="'Cancelado'"
               ></circle-progress></td>
           </tr>
         </tbody>

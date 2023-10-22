@@ -17,6 +17,5 @@ export class Facturav1Component {
     {text: 'edificio1.jpg', cols: 1, rows: 2},
     {text: 'edificio2.jpg', cols: 1, rows: 2},
     {text: 'edificio4.jpg', cols: 1, rows: 2},
-    {text: 'edificio5.jpg', cols: 3, rows: 2},
   ];
 }
