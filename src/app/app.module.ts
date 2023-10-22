@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SideBarComponent } from './componets/side-bar/side-bar.component';
 //icons
-import { LucideAngularModule, File, Home, Menu, UserCheck,BarChart3,WalletCards,LogOut } from 'lucide-angular';
+import { LucideAngularModule, File, Home, Menu, UserCheck,BarChart3,WalletCards,LogOut,UserCircle2 } from 'lucide-angular';
 import { ValuePayComponent } from './componets/value-pay/value-pay.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
@@ -21,6 +21,8 @@ import { AppRoutingModule } from './componets/app-routing.module';
 import { StatusCComponent } from './componets/status-c/status-c.component';
 import {MatTableModule} from '@angular/material/table';
 import { PayCComponent } from './componets/pay-c/pay-c.component';
+import { LoginComponent } from './componets/login/login.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,10 +31,11 @@ import { PayCComponent } from './componets/pay-c/pay-c.component';
     ValuePayComponent,
     ProgressComponent,
     StatusCComponent,
-    PayCComponent
+    PayCComponent,
+    LoginComponent
   ],
   imports: [
-    BrowserModule,LucideAngularModule.pick({File, Home, Menu, UserCheck,BarChart3,WalletCards,LogOut}), BrowserAnimationsModule,
+    BrowserModule,LucideAngularModule.pick({File, Home, Menu, UserCheck,BarChart3,WalletCards,LogOut,UserCircle2}), BrowserAnimationsModule,
     MatToolbarModule,MatCardModule, MatButtonModule, MatListModule, MatDividerModule, 
     MatGridListModule,MatExpansionModule,
     NgCircleProgressModule.forRoot({
@@ -43,7 +46,7 @@ import { PayCComponent } from './componets/pay-c/pay-c.component';
       innerStrokeColor: "#C7E596",
       animationDuration: 300,
     }),
-    AppRoutingModule,MatTableModule
+    AppRoutingModule,MatTableModule,MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

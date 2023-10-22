@@ -24,7 +24,7 @@ height: 100%;
 
 }
 .custom-image {
-    width: 300px; /* Ancho deseado en píxeles */
+    width: 320px; /* Ancho deseado en píxeles */
     height: 150px; /* La altura se ajustará automáticamente para mantener la proporción original */
 }
 
