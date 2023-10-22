@@ -17,6 +17,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ProgressComponent } from './componets/progress/progress.component';
+import { AppRoutingModule } from './componets/app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +39,7 @@ import { ProgressComponent } from './componets/progress/progress.component';
       innerStrokeColor: "#C7E596",
       animationDuration: 300,
     }),
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

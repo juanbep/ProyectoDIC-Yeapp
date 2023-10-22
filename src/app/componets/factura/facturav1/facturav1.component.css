@@ -2,10 +2,14 @@
 mat-grid-tile {
     background: lightblue;
 }
+.principal{
+width: 80%px;
+height: 100%;
 
+}
 .custom-image {
     width: 300px; /* Ancho deseado en píxeles */
-    height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
+    height: 150px; /* La altura se ajustará automáticamente para mantener la proporción original */
 }
 
 .card{
@@ -56,27 +60,21 @@ mat-grid-tile {
     }
 } 
 
-.contenedor {
-    width: 100%; /* Establece el ancho del contenedor al 100% del contenedor padre */
-    height: 100%;
-    margin: 0 auto; /* Centra el contenedor en la página */
-    padding: 20px; /* Agrega relleno al contenedor si es necesario */
-}
 .encabezado{
-    width: 100%;
-    height: 35%;
+    width: 98%;
+    height: 20%;
 }
 
 .encabezado img{
     width: 100%;
-    height: 100%;
+    height: 60%;
 }
 
 .encabezado h1{
     color: white;
     position: absolute;
     top: 2%;
-    left: 60%;
+    left: 65%;
     text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
 
 }
@@ -86,7 +84,7 @@ mat-grid-tile {
     position: absolute;
     top: 10%;
     font-weight: normal;
-    left: 60%;
+    left: 65%;
     text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
 
 }
@@ -95,7 +93,7 @@ mat-grid-tile {
     color: white;
     position: absolute;
     top: 15%;
-    left: 60%;
+    left: 65%;
     text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
 
 }
@@ -104,7 +102,7 @@ mat-grid-tile {
     width: 80px;
     height: 80px;
     position: absolute;
-    left: 52%;
+    left: 57%;
     top: 6%;
 }
 
@@ -115,5 +113,5 @@ mat-grid-tile {
 
 .footer img{
     width: 100%;
-    height: 100%;
+    height: 50%;
 }
