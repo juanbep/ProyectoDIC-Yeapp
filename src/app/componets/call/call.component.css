@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/* Estilos para el contenedor principal */
+.chat-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Sombra más oscura */
+  border-radius: 15px; /* Bordes más redondeados */
+  height: 350px; /* Aumentamos la altura del chat */
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+/* Estilos para el encabezado del chat */
+.chat-header {
+  background-color: #dc0f19; /* Cambiamos el color rojo por #DC0F19 */
+  color: white;
+  padding: 5px; /* Reducimos el espacio alrededor del encabezado */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Alinea el icono y el nombre a los extremos */
+  border-radius: 15px 15px 0 0; /* Bordes redondeados solo en la parte superior */
+  cursor: pointer; /* Hacer que el encabezado sea interactivo */
+  height: 30px; /* Reducimos la altura del encabezado */
+  font-family: Ubuntu;
+  font-size: 14px; /* Reducimos el tamaño de fuente */
+  border: none; /* Eliminamos el borde */
+}
+
+.chat-header.minimized {
+  border: 2px solid #dc0f19; /* Borde grueso del color del encabezado cuando está minimizado */
+  padding: 0; /* Eliminamos el espacio alrededor del encabezado minimizado */
+  height: 20px; /* Reducimos la altura del encabezado minimizado */
+  font-size: 14px; /* Reducimos el tamaño de fuente cuando está minimizado */
+}
+
+.minimized-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Alinea el icono y el nombre a los extremos */
+  width: 60px; /* Aumentamos el tamaño del icono minimizado */
+  height: 60px; /* Aumentamos el tamaño del icono minimizado */
+  border: 2px; /* Borde grueso del color del encabezado cuando está minimizado */
+  border-radius: 15px; /* Bordes redondeados para el icono minimizado */
+}
+
+.user-icon {
+  width: 30px; /* Reducimos el tamaño del icono minimizado */
+  height: 30px; /* Reducimos el tamaño del icono minimizado */
+  border-radius: 50%; /* Hace que la imagen del usuario sea circular */
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+  display: none; /* Oculta el nombre cuando está minimizado */
+}
+
+/* Estilos para los mensajes de chat */
+.chat-message {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 0 0 15px 15px; /* Bordes redondeados solo en la parte inferior */
+  display: block;
+  height: auto; /* Altura automática para el contenido del chat abierto */
+}
+
+/* Estilo para resaltar en rojo */
+.highlighted {
+  background-color: #dc0f19;
+  color: white;
+}
+
+/* Estilo para chat minimizado */
+.chat-box.minimized {
+  width: 40px; /* Aumentamos el tamaño del chat minimizado */
+  height: 40px; /* Aumentamos el tamaño del chat minimizado */
+  transition: all 0.3s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Sombra más oscura */
+}
+
+/* Mostrar el nombre cuando el chat está abierto */
+.chat-box:not(.minimized) .user-name {
+  display: block;
+}
+
+/* Implementacion del callApi */
+.callButton {
+  float: right;
+  text-align: center;
+  padding: 5px;
+  font-family: Ubuntu;
+}
+
+button {
+  border: 1px solid #050e16;
+  background-color: #364cc9;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+button#hangupButton {
+  margin: 0;
+}
+
+.remoteAudio {
+  background-color: rgb(241, 239, 239);
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 300px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+}
+
+audio {
+  background-color: rgb(241, 239, 239);
+  margin-left: 15px;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.logoIcon {
+  display: flex;
+  font-size: 3vh;
+  opacity: 0.2;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family: Ubuntu;
+}
+
+.styleit audio::-webkit-media-controls-panel {
+  background-color: rgb(241, 239, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}

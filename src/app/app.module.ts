@@ -23,6 +23,8 @@ import {MatTableModule} from '@angular/material/table';
 import { PayCComponent } from './componets/pay-c/pay-c.component';
 import { LoginComponent } from './componets/login/login.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { CallComponent } from './componets/call/call.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +34,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     ProgressComponent,
     StatusCComponent,
     PayCComponent,
-    LoginComponent
+    LoginComponent,
+    CallComponent
   ],
   imports: [
     BrowserModule,LucideAngularModule.pick({File, Home, Menu, UserCheck,BarChart3,WalletCards,LogOut,UserCircle2}), BrowserAnimationsModule,

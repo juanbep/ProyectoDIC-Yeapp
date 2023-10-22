@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 h1 {
     margin-top: 10px;
     color: rgb(0, 0, 0);
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Ubuntu;
     font-weight: bold;
   }
 h2{
         margin-top: 10px;
         color: rgb(0, 0, 0);
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: Ubuntu;
         font-weight: bold;
 }
 h3{
     margin-top: 10px;
     color: rgb(0, 0, 0);
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Ubuntu;
 }
 
 .principal{
@@ -89,7 +89,7 @@ height: 100%;
 .encabezado h1{
     color: white;
     position: absolute;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Ubuntu;
     font-weight: bold;
     top: 2%;
     left: 65%;

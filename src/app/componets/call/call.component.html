@@ -1,0 +1,26 @@
+<div class="chat-box">
+    <div class="chat-header" (click)="toggleChat()">
+        <div class="minimized-header">
+            <img src="../../../assets/image/user.png" alt="Usuario sin foto" class="user-icon">
+            <span class="user-name">Asistente</span>
+        </div>
+    </div>
+    <div class="chat-message">
+        <div class="callButton">
+            <button id="engage-digital-click-to-call-btn"></button>
+        </div>
+        <div class="remoteAudio">
+            <div class="logoIcon">
+              <img id="initial" class="logo" style="visibility:hidden;display:none; justify-content: center;"
+                src="image/mobile-phone.png" alt="Call Logo" width="100" height="100">
+              <img id="Ringing" style="visibility:hidden;display:none;" src="../../../assets/image/call.png" alt="CalLRinging" width="100"
+                height="100">
+              <img id="Connected" style="visibility:hidden;display:none;" src="../../../assets/image/phone-call.png" alt="CallConnected"
+                width="100" height="80">
+            </div>
+            <audio id="engage-digital-remote-audio" autoplay controls></audio>
+        </div>
+        <div class="alert" id='engage-digital-alert'></div>
+    </div>
+</div>
+
