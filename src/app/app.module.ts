@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SideBarComponent } from './componets/side-bar/side-bar.component';
 //icons
-import { LucideAngularModule, File, Home, Menu, UserCheck,BarChart3,WalletCards,LogOut,UserCircle2 } from 'lucide-angular';
+import { LucideAngularModule, File, Home, Menu, UserCheck,BarChart3,WalletCards,LogOut,UserCircle2,UserCog2,Construction } from 'lucide-angular';
 import { ValuePayComponent } from './componets/value-pay/value-pay.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
@@ -24,6 +24,7 @@ import { PayCComponent } from './componets/pay-c/pay-c.component';
 import { LoginComponent } from './componets/login/login.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { CallComponent } from './componets/call/call.component';
+import { AdvanceComponent } from './componets/advance/advance.component';
 
 @NgModule({
   declarations: [
@@ -35,10 +36,11 @@ import { CallComponent } from './componets/call/call.component';
     StatusCComponent,
     PayCComponent,
     LoginComponent,
-    CallComponent
+    CallComponent,
+    AdvanceComponent
   ],
   imports: [
-    BrowserModule,LucideAngularModule.pick({File, Home, Menu, UserCheck,BarChart3,WalletCards,LogOut,UserCircle2}), BrowserAnimationsModule,
+    BrowserModule,LucideAngularModule.pick({File, Home, Menu, UserCheck,BarChart3,WalletCards,LogOut,UserCircle2,UserCog2,Construction}), BrowserAnimationsModule,
     MatToolbarModule,MatCardModule, MatButtonModule, MatListModule, MatDividerModule, 
     MatGridListModule,MatExpansionModule,
     NgCircleProgressModule.forRoot({

@@ -6,13 +6,14 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { StatusCComponent } from './status-c/status-c.component';
 import { PayCComponent } from './pay-c/pay-c.component';
 import { LoginComponent } from './login/login.component';
-
+import { AdvanceComponent } from './advance/advance.component';
 const routes: Routes = [
   {path:'',component:SideBarComponent},
   {path:'factC',component:Facturav1Component},
   {path:'statC',component:StatusCComponent},
   {path:'payC',component:PayCComponent},
   {path:'login',component:LoginComponent},
+  {path:'advC',component:AdvanceComponent},
 ];
 
 @NgModule({

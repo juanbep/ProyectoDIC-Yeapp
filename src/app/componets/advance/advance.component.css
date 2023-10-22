@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
 h1 {
     margin-top: 10px;
     color: rgb(0, 0, 0);
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Ubuntu;
     font-weight: bold;
+    text-align: center;
   }
-
   .centro {
     display: flex;
     justify-content: center;

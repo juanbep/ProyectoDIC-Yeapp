@@ -1,6 +1,6 @@
 
 <div class="sidebar">   
-        <img class="imglogo" src="../../assets/img/logo.avif" alt="logo" width="90%" height="90%" />
+        <img class="imglogo" src="../../assets/img/logo.avif" alt="logo" width="90%" height="70%" />
         <div class="titleRepo">
             <h3>Sistema DIC </h3>
         </div>
@@ -18,9 +18,21 @@
             </a>
         </div>
         <div class="my-1">
+            <a class="button-link" [routerLink]="['/advC']"  >
+                <i-lucide class="custom-icon" name="construction"></i-lucide>
+                <p> Avances de Obra</p>
+            </a>
+        </div>
+        <div class="my-1">
             <a class="button-link" [routerLink]="['/payC']" >
                 <i-lucide class="custom-icon" name="wallet-cards"></i-lucide>
                 <p> Pago en linea</p>
+            </a>
+        </div>
+        <div class="my-1">
+            <a class="button-link" [routerLink]="['/payC']"  >
+                <i-lucide class="custom-icon" name="user-cog-2"></i-lucide>
+                <p> Configuracion de Usuario</p>
             </a>
         </div>
         <div class="my-1">

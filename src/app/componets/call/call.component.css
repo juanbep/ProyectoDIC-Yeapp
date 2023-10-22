@@ -8,7 +8,7 @@
   background-color: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Sombra más oscura */
   border-radius: 15px; /* Bordes más redondeados */
-  height: 350px; /* Aumentamos la altura del chat */
+  height: 300px; /* Aumentamos la altura del chat */
   transition: all 0.3s;
   overflow: hidden;
 }
@@ -30,10 +30,11 @@
 }
 
 .chat-header.minimized {
-  border: 2px solid #dc0f19; /* Borde grueso del color del encabezado cuando está minimizado */
+  border: 25px solid #dc0f19; /* Borde grueso del color del encabezado cuando está minimizado */
   padding: 0; /* Eliminamos el espacio alrededor del encabezado minimizado */
   height: 20px; /* Reducimos la altura del encabezado minimizado */
   font-size: 14px; /* Reducimos el tamaño de fuente cuando está minimizado */
+  border-radius: 25px;
 }
 
 .minimized-header {
@@ -89,17 +90,21 @@
 
 /* Implementacion del callApi */
 .callButton {
-  float: right;
+  float: top;
   text-align: center;
   padding: 5px;
   font-family: Ubuntu;
+
 }
 
 button {
+  width: 80px;
+  height: 30px;
   border: 1px solid #050e16;
-  background-color: #364cc9;
+  background-color: #0923bac8;
   color: #ffffff;
   padding: 5px 10px;
+  border-radius: 10px;
 }
 
 button:hover {
@@ -118,11 +123,8 @@ button#hangupButton {
 }
 
 .remoteAudio {
-  background-color: rgb(241, 239, 239);
-  margin-top: 10px;
-  margin-left: 20px;
-  width: 300px;
-  height: 225px;
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -140,11 +142,9 @@ audio {
 .logoIcon {
   display: flex;
   font-size: 3vh;
-  opacity: 0.2;
   text-align: center;
   vertical-align: middle;
   justify-content: center;
-  margin-top: 38px;
 }
 
 .alert {
@@ -152,6 +152,7 @@ audio {
   justify-content: center;
   align-items: center;
   margin: auto;
+  margin-top: 20px;
   font-family: Ubuntu;
 }
 
@@ -162,3 +163,41 @@ audio {
   align-items: center;
   margin: auto;
 }
+
+/* Definición de la animación de shake */
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  10% { transform: translate(-5px, 0); }
+  20% { transform: translate(5px, 0); }
+  30% { transform: translate(-5px, 0); }
+  40% { transform: translate(5px, 0); }
+  50% { transform: translate(-5px, 0); }
+  60% { transform: translate(5px, 0); }
+  70% { transform: translate(-5px, 0); }
+  80% { transform: translate(5px, 0); }
+  90% { transform: translate(-5px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes zoomOn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Aplicar la animación al hacer hover
+.logoIcon{
+  animation: shake 0.5s ease infinite; /* 0.5 segundos de duración y animación infinita
+}*/

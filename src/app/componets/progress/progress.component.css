@@ -1,0 +1,6 @@
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 280px; /* Esto asegura que el div esté centrado en toda la altura de la ventana */
+  }
