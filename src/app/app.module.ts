@@ -18,13 +18,18 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ProgressComponent } from './componets/progress/progress.component';
 import { AppRoutingModule } from './componets/app-routing.module';
+import { StatusCComponent } from './componets/status-c/status-c.component';
+import {MatTableModule} from '@angular/material/table';
+import { PayCComponent } from './componets/pay-c/pay-c.component';
 @NgModule({
   declarations: [
     AppComponent,
     SideBarComponent,
     Facturav1Component,
     ValuePayComponent,
-    ProgressComponent
+    ProgressComponent,
+    StatusCComponent,
+    PayCComponent
   ],
   imports: [
     BrowserModule,LucideAngularModule.pick({File, Home, Menu, UserCheck,BarChart3,WalletCards}), BrowserAnimationsModule,
@@ -39,7 +44,7 @@ import { AppRoutingModule } from './componets/app-routing.module';
       innerStrokeColor: "#C7E596",
       animationDuration: 300,
     }),
-    AppRoutingModule,
+    AppRoutingModule,MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

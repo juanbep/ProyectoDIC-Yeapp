@@ -1,7 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
-mat-grid-tile {
-    background: lightblue;
+h1 {
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+  }
+h2{
+        margin-top: 10px;
+        color: rgb(0, 0, 0);
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
 }
+h3{
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .principal{
 width: 80%px;
 height: 100%;
@@ -89,6 +105,9 @@ height: 100%;
 
 }
 
+.icono{
+    border-radius: 10px; 
+  }
 .encabezado h2{
     color: white;
     position: absolute;

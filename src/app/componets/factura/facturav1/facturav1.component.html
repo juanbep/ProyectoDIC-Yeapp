@@ -16,9 +16,11 @@
             </mat-card-header>
             <mat-card-content>
                 <h2>Fecha Estado de Cuenta</h2>
-                <h3>Fecha: 9 AGO 2021/30 JUN 2023</h3> 
-                <h3>Valor total del apartamento: $135.000.000</h3>
-                <h3></h3>
+                <h3> 10 AGO 202/30 JUN 2023</h3> 
+                <mat-divider></mat-divider>
+                <h2>Valor total del apartamento</h2>
+                <h3> $135.000.000</h3> 
+                
               <p>
                 <br>
                 <br>
@@ -31,7 +33,7 @@
                         [colspan]="tile.cols"
                         [rowspan]="tile.rows"
                         >
-                        <img class="icono" [src]="'../../../../assets/Recursos/' + tile.text" alt="">
+                        <img class="icono" [src]="'../../../../assets/Recursos/' + tile.text" alt="logo" width="90%" height="90%">
                     </mat-grid-tile>
                   </mat-grid-list>
               </p>
@@ -43,14 +45,15 @@
             <mat-card-content>
                 <h2>Resumen Estado de Cuenta</h2>
                 <h3>Total Abonado: $52.000.000 </h3> 
-                <h3>Abono Mes Anterior: $52.000.000</h3>
                 <h3>Saldo Total: $83.000.000</h3>
-              <p>
                 <mat-divider></mat-divider>
-                <br>
-                <br>
-                <app-progress></app-progress>
-              </p>
+                <h1>
+                    !Tu nuevo hogar esta en construcción¡<br><br>
+                    ESTAMOS COMPROMETIDOS
+                    CON LA FECHA DE ENTREGA
+                    DE ESTE PROYECTO 
+                </h1>
+              
             </mat-card-content>
         </mat-card>
     </div>

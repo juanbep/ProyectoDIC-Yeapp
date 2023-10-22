@@ -5,19 +5,19 @@
         </div>
     <ul class="pt-2">
         <div class="my-1">
-            <a class="button-link" >
+            <a class="button-link"[routerLink]="['/factC']">
                 <i-lucide class="custom-icon" name="home"></i-lucide>
                 <p> Inicio</p>
             </a>
         </div>
         <div class="my-1">
-            <a class="button-link" [routerLink]="['/factC']">
+            <a class="button-link" [routerLink]="['/statC']">
                 <i-lucide class="custom-icon" name="bar-chart-3"></i-lucide>
                 <p>Estado de cuenta</p>
             </a>
         </div>
         <div class="my-1">
-            <a class="button-link" >
+            <a class="button-link" [routerLink]="['/payC']" >
                 <i-lucide class="custom-icon" name="wallet-cards"></i-lucide>
                 <p> Pago en linea</p>
             </a>
